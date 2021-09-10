@@ -66,14 +66,13 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format argument */
 	{keymap,             "  %2s |",    NULL},
-	{netspeed_rx,        "  %8s |",    "wlp0s20f3"},
-	{netspeed_tx,        " %8s 祝|",    "wlp0s20f3"},
+	{netspeed_rx,        "  %8s |",    "wlp0s20f3"},
+	{netspeed_tx,        "  %8s |",    "wlp0s20f3"},
 	{temp,               "  %2sC |",      "/sys/class/thermal/thermal_zone9/temp"},
 	{ram_perc,           "  %2s%% |",  NULL},
 	{cpu_perc,           "  %2s%% |",  NULL},
 	{battery_state,      "   %s",      "BAT0"},
 	{battery_perc,       "%3s%% ",      "BAT0"},
-  {battery_remaining,  "(%s) |",       "BAT0"}, 
-	{datetime,           "  %s",       "%F |"},
-	{datetime,           "  %s",       "%T"},
+        {battery_remaining,  "(%s) |",       "BAT0"}, 
+	{datetime,           "  %s",       "%F %T"},
 };
